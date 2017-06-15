@@ -7,7 +7,7 @@ module.exports = {
  entry: [
     'webpack/hot/dev-server',
     'webpack-dev-server/client?http://localhost:8080',
-    './src/app.js'
+    './src/component/KeyBoard1.jsx'
   ],
   output: {
   	path:path.resolve(__dirname,'dist'),
@@ -22,7 +22,7 @@ module.exports = {
       },
       
         { test: /\.css$/, 
-          loader: 'style-loader!css-loader?modules' 
+          loader: 'style-loader!css-loader' 
         },
          { test: /\.(png|jpg)$/,
            loader: 'url-loader?limit=8192'
